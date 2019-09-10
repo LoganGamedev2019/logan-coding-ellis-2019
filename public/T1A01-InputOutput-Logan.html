@@ -1,0 +1,12 @@
+
+<input type=text id="myText01" value="Type A Message Here"><br>
+
+<input type=button id="myButton01" value=run onclick="{
+
+	let myTemp = document.getElementById('myText01').value
+	document.getElementById('myDiv01').innerHTML = myTemp
+
+	}">
+
+
+	<div id="myDiv01"><font color=red>Your Message Goes Here</font></div>
