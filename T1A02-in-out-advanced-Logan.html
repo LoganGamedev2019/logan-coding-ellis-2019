@@ -1,0 +1,66 @@
+<body background="lake.jpg">
+<img src="yesssir.png" width=0 id="myImage01">
+<img src="lake 2.jfif" width=0 id="myImage02"><br>
+
+<input type=text id="myText01" value="Type A Message Here">
+
+<input type=button id="myButton01" value=run onclick="{
+
+	let myTemp = document.getElementById('myText01').value
+	document.getElementById('myDiv01').innerHTML = myTemp
+
+	}">
+
+	
+	<div id="myDiv01"><font color=red>Your Message Goes Here</font></div><br>
+
+
+
+
+<input type=button id="myButton02" value=DragMouseOverThis onmouseover="{
+
+	let myTemp = document.getElementById('myText02').value
+	document.getElementById('myDiv02').innerHTML = myTemp
+
+
+	}">
+
+
+
+<input type=text id="myText02" value="say something else here">
+<div id="myDiv02"><font color=red>and it shows up here</font></div><br>
+
+<input type=button value=displayimage onclick="{
+let myTemp1 = document.getElementById('myImage02').style.position='absolute'
+document.getElementById('myImage02').style.left='400'
+document.getElementById('myImage02').style.width=300
+
+
+
+}">
+<input type=button value=hideimage onclick="{
+let myTemp1 = document.getElementById('myImage02').style.position='absolute'
+document.getElementById('myImage02').style.left='0'
+document.getElementById('myImage02').style.width='0'
+
+
+
+}">
+<input type=button value=displayimage2 onclick="{
+let myTemp1 = document.getElementById('myImage01').style.position='absolute'
+document.getElementById('myImage01').style.left='800'
+document.getElementById('myImage01').style.width=300
+
+
+
+}">
+<input type=button value=hideimage2 onclick="{
+let myTemp1 = document.getElementById('myImage02').style.position='absolute'
+document.getElementById('myImage01').style.left='0'
+document.getElementById('myImage01').style.width='0'
+
+
+
+}">
+
+</body>
