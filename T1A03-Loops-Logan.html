@@ -1,0 +1,36 @@
+<input type=text id="myText01" value="50"><br>
+
+<input type=button value="loop" onclick="{
+
+	let myTemp = document.getElementById('myText01').value
+	let mySum = ''
+	document.getElementById('myDiv01').innerHTML = ''
+	for (let myLoop=0; myLoop<= myTemp; myLoop++){
+		mySum+= 'Loop #: '+myLoop+'<br>'
+	}
+	document.getElementById('myDiv01').innerHTML = mySum
+}"><br>
+
+<input type=button value="clear loop" onclick="{
+document.getElementById('myText01').value='0'
+let myTemp = document.getElementById('myText01').value
+	let mySum = ''
+	document.getElementById('myDiv01').innerHTML = ''
+	for (let myLoop=0; myLoop<= myTemp; myLoop++){
+		mySum+= 'Loop #: '+myLoop+'<br>'
+	}
+	document.getElementById('myDiv01').innerHTML = mySum
+
+}"><br>
+<input type=button value="random loop <30" onclick="{
+document.getElementById('myText01').value=Math.floor(Math.random()*30)
+let myTemp = document.getElementById('myText01').value
+	let mySum = ''
+	document.getElementById('myDiv01').innerHTML = ''
+	for (let myLoop=0; myLoop<= myTemp; myLoop++){
+		mySum+= 'Loop #: '+myLoop+'<br>'
+	}
+document.getElementById('myDiv01').innerHTML = mySum
+
+}">
+<div id="myDiv01">...</div>
