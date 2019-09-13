@@ -1,0 +1,17 @@
+<h1>Type 1 or 2 into the top text box then press flip</h1><br>
+<input type=text id="myText01" value="0"><br>
+<input type=text id="myText02" value="0"><br>
+
+<input type=button value="Flip" onclick="{
+document.getElementById('myText02').value=Math.floor(Math.random()*2)
+ 
+x= document.getElementById('myText01').value 
+y=  document.getElementById('myText02').value 
+
+if (x==y){ 
+alert('you win')
+}else{
+alert('you lose')
+}
+}">
+
