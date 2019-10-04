@@ -4,10 +4,9 @@ Objexts, desicions, decimals by Logan </h1>
 
 
 
-
 Full Name: <input type=text id="myText01" value="Logan Rodger"> <br>
 Age: <input type=text id="myText02" value="22"> <br>
-Height: <input type=text id="myText03" value="5'10">feet/inches <br>
+Height: <input type=text id="myText03" value="1.78">metres <br>
 Shoe Size: <input type=text id="myText04" value="9"> <br>
 Weight: <input type=text id="myText05" value="140"> lbs<br>
 Temp: <input type=text id="myText06" value="30"> ℃ <br>
@@ -19,24 +18,51 @@ Temp: <input type=text id="myText06" value="30"> ℃ <br>
 	let myShoeSize = document.getElementById('myText04').value;
 	let myWeight = document.getElementById('myText05').value;
 	let myTemp = document.getElementById('myText06').value;
+	let myBMI = 'myHeight'/'myWeight'*'myWeight'
 
 let myPrintout = 'myPerson object =' +
-JSON.stringify(myAge, null, 3) + ' myName: ' + myName + ','  + ' myAge: ' + myAge + ',' + 'myHeight:' + myHeight + ',' + 'myShoeSize:' + myShoeSize + ',' + 'myWeight:' + myWeight + ',' + 'myTemp:' + myTemp + '℃ '
+' myName: ' + myName + ','  + ' myAge: ' + myAge + ', ' + 'myHeight:' + myHeight + ', ' + 'myShoeSize:' + myShoeSize + ', ' + 'myWeight:' + myWeight + ', ' + 'myTemp:' + myTemp + '℃ '
 	let myIf = 'cool'
 	if ( parseInt(myAge) <= 13) {myIf = 'you are a child'}
 	if ( parseInt(myAge) >= 13) {myIf = 'you are a teen'}
 	if ( parseInt(myAge) >= 20) {myIf = 'you are an adult'}
 	if ( parseInt(myAge) >= 40) {myIf = 'you are old'}
+	
 
 
-JSON.stringify(myName, null, 3) + ' myName: ' + myName
+	let myIf02 = 'cool'
+	if ( parseInt(myTemp) <= 36.1) {myIf02 = 'you are a lizard'}
+	if ( parseInt(myTemp) >= 36.1) {myIf02 = 'you are normal'}
+	
+	if ( parseInt(myTemp) >= 38) {myIf02 = 'you have a fever'}
+	if ( parseInt(myTemp) >= 40) {myIf02 = 'you need a fire extinguisher'}
+	
 
+	let myIf03 = 'cool'
+	
+
+	if ( parseInt(myBMI) <= 36.1) {myIf03 = 'you are overweight'}
+	
+	
+	
 	
 
 		document.getElementById('myDiv01').innerHTML = myIf
+ 		document.getElementById('myDiv02').innerHTML = myIf02
+		document.getElementById('myDiv03').innerHTML = myIf03
 		document.getElementById('myTextArea01').value = myPrintout
 
 }">
+<input type=button value= "input/output" onclick="{
+document.getElementById('myDiv04').innerHTML= myBMI
+let myWeight = document.getElementById('myText05').value;
+let myHeight = document.getElementById('myText03').value;
+let myBMI = 'myHeight'/'myWeight'*'myWeight'
 
-<div id="myDiv01">...</div><br>
+}">
+
+<div id="myDiv01">Age</div><br>
+<div id="myDiv02">Temp</div><br>
+<div id="myDiv03">BMI</div><br>
+<div id="myDiv04">test</div><br>
 <textarea id="myTextArea01" rows=10 cols=80 noWRAP>...</textarea>
