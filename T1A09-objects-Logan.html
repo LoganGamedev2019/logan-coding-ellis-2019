@@ -18,7 +18,7 @@ Temp: <input type=text id="myText06" value="30"> ℃ <br>
 	let myShoeSize = document.getElementById('myText04').value;
 	let myWeight = document.getElementById('myText05').value;
 	let myTemp = document.getElementById('myText06').value;
-	let myBMI = 'myHeight'/'myWeight'*'myWeight'
+	
 
 let myPrintout = 'myPerson object =' +
 ' myName: ' + myName + ','  + ' myAge: ' + myAge + ', ' + 'myHeight:' + myHeight + ', ' + 'myShoeSize:' + myShoeSize + ', ' + 'myWeight:' + myWeight + ', ' + 'myTemp:' + myTemp + '℃ '
@@ -38,10 +38,10 @@ let myPrintout = 'myPerson object =' +
 	if ( parseInt(myTemp) >= 40) {myIf02 = 'you need a fire extinguisher'}
 	
 
-	let myIf03 = 'cool'
+	
 	
 
-	if ( parseInt(myBMI) <= 36.1) {myIf03 = 'you are overweight'}
+	
 	
 	
 	
@@ -49,20 +49,13 @@ let myPrintout = 'myPerson object =' +
 
 		document.getElementById('myDiv01').innerHTML = myIf
  		document.getElementById('myDiv02').innerHTML = myIf02
-		document.getElementById('myDiv03').innerHTML = myIf03
+		
 		document.getElementById('myTextArea01').value = myPrintout
 
 }">
-<input type=button value= "input/output" onclick="{
-document.getElementById('myDiv04').innerHTML= myBMI
-let myWeight = document.getElementById('myText05').value;
-let myHeight = document.getElementById('myText03').value;
-let myBMI = 'myHeight'/'myWeight'*'myWeight'
 
-}">
 
 <div id="myDiv01">Age</div><br>
 <div id="myDiv02">Temp</div><br>
-<div id="myDiv03">BMI</div><br>
-<div id="myDiv04">test</div><br>
+
 <textarea id="myTextArea01" rows=10 cols=80 noWRAP>...</textarea>
