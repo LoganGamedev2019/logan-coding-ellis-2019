@@ -2,20 +2,36 @@
 
 Objexts, desicions, decimals by Logan </h1>
 
-You add bodyTemp and determine if the user has a fever.<br>
-advanced: input the body temp into the object<br>
 
-Body Temp: <input type=text id="myText01" value="36.1"> degrees Celcius<br>
+
+
+Full Name: <input type=text id="myText01" value="Logan Rodger"> <br>
+Age: <input type=text id="myText02" value="22"> <br>
+Height: <input type=text id="myText03" value="5'10">feet/inches <br>
+Shoe Size: <input type=text id="myText04" value="9"> <br>
+Weight: <input type=text id="myText05" value="140"> lbs<br>
+Temp: <input type=text id="myText06" value="30"> ℃ <br>
 
 <input type=button value= "input/output" onclick="{
-	let myPerson = {'age': '22', 'name' :'logan'};
+	let myAge = document.getElementById('myText02').value;  
+	let myName = document.getElementById('myText01').value;
+	let myHeight = document.getElementById('myText03').value;
+	let myShoeSize = document.getElementById('myText04').value;
+	let myWeight = document.getElementById('myText05').value;
+	let myTemp = document.getElementById('myText06').value;
 
-	let myTemp = document.getElementById('myText01').value
-
-let myPrintout = 'myPerson object :' +
-JSON.stringify(myPerson, null, 3) + ' myPerson.age : ' + myPerson.age
+let myPrintout = 'myPerson object =' +
+JSON.stringify(myAge, null, 3) + ' myName: ' + myName + ','  + ' myAge: ' + myAge + ',' + 'myHeight:' + myHeight + ',' + 'myShoeSize:' + myShoeSize + ',' + 'myWeight:' + myWeight + ',' + 'myTemp:' + myTemp + '℃ '
 	let myIf = 'cool'
-	if ( parseInt(myPerson.age) >= 20) {myIf = 'you are an adult'}
+	if ( parseInt(myAge) <= 13) {myIf = 'you are a child'}
+	if ( parseInt(myAge) >= 13) {myIf = 'you are a teen'}
+	if ( parseInt(myAge) >= 20) {myIf = 'you are an adult'}
+	if ( parseInt(myAge) >= 40) {myIf = 'you are old'}
+
+
+JSON.stringify(myName, null, 3) + ' myName: ' + myName
+
+	
 
 		document.getElementById('myDiv01').innerHTML = myIf
 		document.getElementById('myTextArea01').value = myPrintout
