@@ -1,0 +1,167 @@
+<script>
+	let myInterval
+</script>
+
+<h1 align=center>T1A12-Auto-Move-Logan</h1>
+Make all directions (in a table?) replace fred with an image<br>
+
+ <img id='myImage01' src='on my momma.jpg' style="position:absolute; left:200; top:220; height:200; width:200; "></div>
+
+
+
+
+
+
+
+
+
+
+<table>
+<tr>
+<td>
+<input type=button value="up left" onclick="{
+
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) - 10
+	document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) - 10
+	
+
+	} , 50)
+
+
+
+
+}">
+</td>
+<td>
+<input type=button value="Go up Auto" onclick="{
+
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) - 10
+
+	} , 50)
+
+}">
+</td>
+<td>
+<input type=button value="up right" onclick="{
+
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) + 10
+	document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) - 10
+	
+
+	} , 50)
+}">	
+
+</td>
+
+
+</tr>
+<tr>
+<td>
+<input type=button value="Go left Auto" onclick="{
+
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) - 10
+
+	} , 50)
+
+}">
+</td>
+<td>
+<input type=button value="stop" onclick="{
+
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) * 1
+	document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) * 1
+	} , 50)
+
+}">
+</td>
+<td>
+<input type=button value="Go Right Auto" onclick="{
+
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) + 10
+
+	} , 50)
+
+}">
+</td>
+</tr>
+<tr>
+<td>
+<input type=button value="down left" onclick="{
+
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) - 10
+	document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) + 10
+	
+
+	} , 50)
+
+
+
+
+}">
+</td>
+<td>
+<input type=button value="Go down Auto" onclick="{
+
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) + 10
+
+	} , 50)
+
+
+
+
+}">
+</td>
+<td>
+<input type=button value="down right" onclick="{
+
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) + 10
+	document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) + 10
+	
+
+	} , 50)
+}">
+</td>
+</tr>
+</table>
+	
