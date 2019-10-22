@@ -1,56 +1,191 @@
-//x is new card
-//y is dealer total
-//z is player total
-x=0
-y=0
-z=0
+//x is new card<br>
+//y is dealer total<br>
+//z is player total<br>
+
+
+y=0<br>
+
+z=0<br>
+
+<input type=text id="myText01" value="Type A Message Here">
+
+<input type=text id="myText02" value="Type A Message Here">
+
+<input type=text id="myText03" value="Type A Message Here"><br>
+
+<input type=text id="myText04" value="Type A Message Here"><br>
+
+<input type=text id="myText05" value="Type A Message Here">
+
+<input type=text id="myText06" value="Type A Message Here">
+
+<input type=text id="myText07" value="Type A Message Here">
+
+<input type=text id="myText08" value="Type A Message Here">
+
+<input type=button value=draw id="myButton01" onclick="{
+
+document.getElementById('myButton01').style.display='none'
+
+document.getElementById('myButton02').style.display='initial'
+
+document.getElementById('myText01').value=Math.floor(Math.random()*53)
+
+x=document.getElementById('myText01').value
+if(x<=4){
+document.getElementById('myText01').value=1
+}
+
+if(8>=x && x>4){
+document.getElementById('myText01').value=2
+}
+
+if(12>=x && x>8){
+document.getElementById('myText01').value=3
+}
+
+if(16>=x && x>12){
+document.getElementById('myText01').value=4
+}
+
+if(20>=x && x>16){
+document.getElementById('myText01').value=5
+}
+
+if(24>=x && x>20){
+document.getElementById('myText01').value=6
+}
+
+if(28>=x && x>24){
+document.getElementById('myText01').value=7
+}
+
+if(32>=x && x>28){
+document.getElementById('myText01').value=8
+}
+
+if(36>=x && x>32){
+document.getElementById('myText01').value=9
+}
+
+if(52>=x && x>36){
+document.getElementById('myText01').value=10
+}
+
+}">
+<input type=button  value=draw id="myButton02" style="display: none;" onclick="{
+
+document.getElementById('myButton02').style.display='none'
+
+document.getElementById('myButton03').style.display='initial'
+
+
+
 document.getElementById('myText02').value=Math.floor(Math.random()*53)
 
-
-<input type=button value=draw onclick="{
-
-
+x=document.getElementById('myText02').value
 if(x<=4){
-x=1
+document.getElementById('myText02').value=1
 }
-if(8>=x>4){
-x=2
+
+if(8>=x && x>4){
+document.getElementById('myText02').value=2
 }
-if(12>=x>8){
-x=3
+
+if(12>=x && x>8){
+document.getElementById('myText02').value=3
 }
-if(16>=x>12){
-x=4
+
+if(16>=x && x>12){
+document.getElementById('myText02').value=4
 }
-if(20>=x>16){
-x=5
+
+if(20>=x && x>16){
+document.getElementById('myText02').value=5
 }
-if(24>=x>20){
-x=6
+
+if(24>=x && x>20){
+document.getElementById('myText02').value=6
 }
-if(28>=x>24){
-x=7
+
+if(28>=x && x>24){
+document.getElementById('myText02').value=7
 }
-if(32>=x>28){
-x=8
+
+if(32>=x && x>28){
+document.getElementById('myText02').value=8
 }
-if(36>=x>32){
-x=9
+
+if(36>=x && x>32){
+document.getElementById('myText02').value=9
 }
-if(52>=x>36){
-x=10
+
+if(52>=x && x>36){
+document.getElementById('myText02').value=10
 }
-if(y>z){
-alert('you lose')
-else{
-alert('you win')
+}">
+<input type=button  value=draw id="myButton03" style="display: none;" onclick="{
+
+document.getElementById('myButton03').style.display='none'
+
+document.getElementById('myText03').value=Math.floor(Math.random()*53)
+
+x=document.getElementById('myText03').value
+if(x<=4){
+document.getElementById('myText03').value=1
 }
-if(y>21){
-aler('you win')
+
+if(8>=x && x>4){
+document.getElementById('myText03').value=2
 }
-if(z>21){
-alert('you lose')
+
+if(12>=x && x>8){
+document.getElementById('myText03').value=3
+}
+
+if(16>=x && x>12){
+document.getElementById('myText03').value=4
+}
+
+if(20>=x && x>16){
+document.getElementById('myText03').value=5
+}
+
+if(24>=x && x>20){
+document.getElementById('myText03').value=6
+}
+
+if(28>=x && x>24){
+document.getElementById('myText03').value=7
+}
+
+if(32>=x && x>28){
+document.getElementById('myText03').value=8
+}
+
+if(36>=x && x>32){
+document.getElementById('myText03').value=9
+}
+
+if(52>=x && x>36){
+document.getElementById('myText03').value=10
+}
+
+}">
+<input type=button  value=add id="myButton04"  onclick="{
+let a=document.getElementById('myText01').value;
+let b=document.getElementById('myText02').value;
+let c=document.getElementById('myText03').value;
+let d=parseInt(a);
+let e=parseInt(b);
+let f=parseInt(c);
 
 
+let g= d + e + f;
+
+document.getElementById('myText04').value= g
+if(g>21){
+alert('you lose')
+}
 
 }">
