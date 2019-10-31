@@ -3,7 +3,7 @@
 <body style="background-color:grey;">
 
 
-<select id="myText01" size=1 onChange="{
+<select id="myText01" style="background-color:lightblue;padding: 15px 32px;" size=1 onChange="{
 	let myTemp = document.getElementById('myText01').value
 	document.getElementById('myDiv01').style.borderStyle = myTemp
 }">
@@ -16,9 +16,9 @@
 <span id="myDiv01" style="border-style:groove; border-width:4;
 border-color;red">
 Select the border you would like </span><br>
-<textarea id="myText02" rows="1" cols="40" placeholder="type the name of a color then press change" ></textarea>
+<textarea id="myText02" rows="30" cols="40" style="background-image:url(lake2.jpg);" placeholder="type the name of a color then press change" ></textarea>
 <br>
-<input type=button value="change" onclick="{
+<input type=button style="background-image:url(lake.jpg);font-size:50;" value="change color of text" onclick="{
 	if(document.getElementById('myText02').value=='green'){
 		document.getElementById('myText02').style.color = 'green'
 }
@@ -125,6 +125,7 @@ if(document.getElementById('myText02').value=='black'){
 ol{
 list-style-type: numbered;
 }
+
 </style>
 <ol>color options:
 <li><font color = red><b>red</b></font></li>

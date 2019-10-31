@@ -1,0 +1,12 @@
+<input type=text id="myText01" value="3">
+
+<input type=button value="Flip" id="myButton01"  onclick="{
+//this.disabled=true;
+document.getElementById('myButton01').style.display='none'
+x=document.getElementById('myText01').value
+if(x<4 && x>1){
+alert('it worked')
+} else{
+alert('you lose')
+}
+}">
