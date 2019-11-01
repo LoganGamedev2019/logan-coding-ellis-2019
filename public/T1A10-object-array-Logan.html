@@ -9,16 +9,34 @@
 }">
 
 <input type=button value="show array object" onclick="{
-	let myArrayObject = {'age':'22', 'name':'Logan'};
+	let myArrayObject = {'steak':'steak=8/10', 'crab':'crab=9.5/10', 'chickengreeksalad':'chicken greek salad=10/10'};
 
-	let myPrintout='myArrayObject = '+JSON.stringify(myArrayObject,null,3)
+myArray = new Array()
+myArray[0] = myArrayObject.steak
+myArray[1] = myArrayObject.crab
+myArray[2] = myArrayObject.chickengreeksalad
+	
+	let myPrintout='Food ratings = '+JSON.stringify(myArray,null,3)
 	document.getElementById('myTextArea01').value = myPrintout
 	document.getElementById('myDiv01').innerHTML = 'nothing useful here'
 
 
 
-myArray = new Array()
-myArray[0] = myArrayObject
+
+}">
+<input type=button value="show array object 2" onclick="{
+	let myArrayObject02 = {'carbrand':'bmw', 'modelname':'I8'};
+
+myArray02 = new Array()
+myArray02[0] = myArrayObject02.carbrand
+myArray02[1] = myArrayObject02.modelname
+	
+	let myPrintout='Car = '+JSON.stringify(myArray02,null,3)
+	document.getElementById('myTextArea01').value = myPrintout
+	document.getElementById('myDiv01').innerHTML = 'nothing useful here'
+
+
+
 
 }">
 <div id="myDiv01">...</div><br>
