@@ -50,7 +50,7 @@ if(parseInt(document.getElementById('myImage02').style.top) <0){
 }
 </script>
 
-
+<img src="L.png" width=0 id="myImage03"><br>
 <img id='myImage01' src='on my momma.jpg' style="position:absolute; left:200; top:220; height:200; width:200; ">
 <img id='myImage02' src='purple.png' style="position:absolute; left:400; top:220; height:200; width:200; ">
 <textarea id="myText01" rows='2' cols='30' >10 </textarea>
@@ -147,7 +147,11 @@ let b=1
 let c=a - b
 document.getElementById('myText01').value=c
 if(c==0)
-alert('you lose')	
+document.getElementById('myImage03').style.position='absolute'
+document.getElementById('myImage03').style.left='500'
+document.getElementById('myImage03').style.top='200'
+document.getElementById('myImage03').style.width='300'
+document.getElementById('myImage03').style.height='300'	
 }
 
 }">
