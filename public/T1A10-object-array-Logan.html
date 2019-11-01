@@ -1,20 +1,21 @@
 <h1 align=center> T1A10-object-array By Logan </h1>
 
-<input type=button value="Show Object Array" onclick="{
+<input type=button value="Show Object Array(person)" onclick="{
 	let myObjectArray = {'age':'22', 'name':'Logan'};
 
-	let myPrintout='myObjectArray = '+JSON.stringify(myObjectArray,null,3)
+	let myPrintout='person = '+JSON.stringify(myObjectArray,null,3)
 	document.getElementById('myTextArea01').value = myPrintout
 	document.getElementById('myDiv01').innerHTML = 'nothing useful here' 
 }">
 
-<input type=button value="show array object" onclick="{
-	let myArrayObject = {'steak':'steak=8/10', 'crab':'crab=9.5/10', 'chickengreeksalad':'chicken greek salad=10/10'};
+<input type=button value="show array object (food ratings)" onclick="{
+	let myArrayObject = {'steak':'steak=8/10', 'crab':'crab=9.5/10', 'chickengreeksalad':'chicken greek salad=10/10', 'asparagus':'asparagus=0/10'};
 
 myArray = new Array()
 myArray[0] = myArrayObject.steak
 myArray[1] = myArrayObject.crab
 myArray[2] = myArrayObject.chickengreeksalad
+myArray[3] = myArrayObject.asparagus
 	
 	let myPrintout='Food ratings = '+JSON.stringify(myArray,null,3)
 	document.getElementById('myTextArea01').value = myPrintout
@@ -24,7 +25,7 @@ myArray[2] = myArrayObject.chickengreeksalad
 
 
 }">
-<input type=button value="show array object 2" onclick="{
+<input type=button value="show array object 2(car)" onclick="{
 	let myArrayObject02 = {'carbrand':'bmw', 'modelname':'I8'};
 
 myArray02 = new Array()
