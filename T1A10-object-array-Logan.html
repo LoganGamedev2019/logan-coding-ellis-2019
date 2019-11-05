@@ -1,0 +1,37 @@
+<h1 align=center> T1A10-object-array By Logan </h1>
+
+<input type=button value="Show Object Array(person)" onclick="{
+	
+myArray = new Array()
+myArray[0] = '22'
+myArray[1] = 'Logan'
+myArray[2] = 'blue'
+
+let myObjectArray = {'person traits': myArray,};
+
+	let myPrintout='person = '+JSON.stringify(myObjectArray,null,3)
+	document.getElementById('myTextArea01').value = myPrintout
+	document.getElementById('myDiv01').innerHTML = 'nothing useful here' 
+
+
+
+}">
+
+<input type=button value="show array object (food ratings)" onclick="{
+	let myArrayObject = {'steak':'8/10', 'crab':'9.5/10', 'chickengreeksalad':'10/10', 'asparagus':'0/10'};
+
+myArray = new Array()
+myArray[0] = myArrayObject
+	
+	let myPrintout='Food ratings = '+JSON.stringify(myArray,null,3)
+	document.getElementById('myTextArea01').value = myPrintout
+	document.getElementById('myDiv01').innerHTML = 'nothing useful here'
+
+
+
+
+}">
+
+<div id="myDiv01">...</div><br>
+<textarea id="myTextArea01" rows=10 cols=80 noWrap>...</textarea>
+
