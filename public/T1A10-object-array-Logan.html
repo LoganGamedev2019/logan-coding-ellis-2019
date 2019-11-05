@@ -1,11 +1,20 @@
 <h1 align=center> T1A10-object-array By Logan </h1>
 
 <input type=button value="Show Object Array(person)" onclick="{
-	let myObjectArray = {'age':'22', 'name':'Logan'};
+	
+myArray = new Array()
+myArray[0] = '22'
+myArray[1] = ' Logan'
+myArray[2] = ' blue'
+
+let myObjectArray = {'age': myArray[0], 'name':myArray[1], 'eye color' : myArray[2]};
 
 	let myPrintout='person = '+JSON.stringify(myObjectArray,null,3)
 	document.getElementById('myTextArea01').value = myPrintout
 	document.getElementById('myDiv01').innerHTML = 'nothing useful here' 
+
+
+
 }">
 
 <input type=button value="show array object (food ratings)" onclick="{
