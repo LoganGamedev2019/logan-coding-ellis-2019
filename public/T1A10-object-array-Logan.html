@@ -4,10 +4,10 @@
 	
 myArray = new Array()
 myArray[0] = '22'
-myArray[1] = ' Logan'
-myArray[2] = ' blue'
+myArray[1] = 'Logan'
+myArray[2] = 'blue'
 
-let myObjectArray = {'age': myArray[0], 'name':myArray[1], 'eye color' : myArray[2]};
+let myObjectArray = {'person traits': myArray,};
 
 	let myPrintout='person = '+JSON.stringify(myObjectArray,null,3)
 	document.getElementById('myTextArea01').value = myPrintout
@@ -21,10 +21,7 @@ let myObjectArray = {'age': myArray[0], 'name':myArray[1], 'eye color' : myArray
 	let myArrayObject = {'steak':'steak=8/10', 'crab':'crab=9.5/10', 'chickengreeksalad':'chicken greek salad=10/10', 'asparagus':'asparagus=0/10'};
 
 myArray = new Array()
-myArray[0] = myArrayObject.steak
-myArray[1] = myArrayObject.crab
-myArray[2] = myArrayObject.chickengreeksalad
-myArray[3] = myArrayObject.asparagus
+myArray[0] = myArrayObject
 	
 	let myPrintout='Food ratings = '+JSON.stringify(myArray,null,3)
 	document.getElementById('myTextArea01').value = myPrintout
@@ -34,21 +31,7 @@ myArray[3] = myArrayObject.asparagus
 
 
 }">
-<input type=button value="show array object 2(car)" onclick="{
-	let myArrayObject02 = {'carbrand':'bmw', 'modelname':'I8'};
 
-myArray02 = new Array()
-myArray02[0] = myArrayObject02.carbrand
-myArray02[1] = myArrayObject02.modelname
-	
-	let myPrintout='Car = '+JSON.stringify(myArray02,null,3)
-	document.getElementById('myTextArea01').value = myPrintout
-	document.getElementById('myDiv01').innerHTML = 'nothing useful here'
-
-
-
-
-}">
 <div id="myDiv01">...</div><br>
 <textarea id="myTextArea01" rows=10 cols=80 noWrap>...</textarea>
 
