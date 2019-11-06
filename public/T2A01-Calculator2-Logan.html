@@ -1,0 +1,36 @@
+<h1 align=center> multiply = * divide= / add= + subtract= - , type a number in the first box, 
+
+a sign into the secod box and another number in the third box </h1>
+<br>
+<textarea id="myText01" placeholder="number"></textarea>
+<textarea id="myText02" placeholder="sign"></textarea>
+<textarea id="myText03"  placeholder="number"></textarea>
+<textarea id="myText04"  placeholder="answer"></textarea>
+<input type=button value="math" onclick="{
+a= document.getElementById('myText01').value
+b= document.getElementById('myText02').value
+c= document.getElementById('myText03').value
+d= document.getElementById('myText04').value
+e= parseFloat(a)
+f= parseFloat(c)
+g = e + f
+h = e - f
+i = e * f
+j = e / f
+
+
+
+if(b=='+'){
+document.getElementById('myText04').value= g
+}
+if(b=='-'){
+document.getElementById('myText04').value= h
+}
+if(b=='*'){
+document.getElementById('myText04').value= i
+}
+if(b=='/'){
+document.getElementById('myText04').value= j
+}
+
+}">
