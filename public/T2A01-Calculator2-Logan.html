@@ -1,6 +1,5 @@
-<h1 align=center> multiply = * divide= / add= + subtract= - , type a number in the first box, 
-
-a sign into the secod box and another number in the third box </h1>
+<h1 align=center> first box is a number, second box is the sign (listed bellow), 
+3rd box is the second number(if needed) and the 4th box is your answer</h1>
 <br>
 <textarea id="myText01" placeholder="number"></textarea>
 <textarea id="myText02" placeholder="sign"></textarea>
@@ -17,6 +16,13 @@ g = e + f
 h = e - f
 i = e * f
 j = e / f
+k = Math.pow(e , f)
+l = Math.sqrt(e)
+m = Math.abs(e)
+n = Math.sin(e * Math.PI / 180)
+o = Math.cos(e * Math.PI / 180 )
+p = Math.tan(e * Math.PI / 180 )
+
 
 
 
@@ -32,5 +38,33 @@ document.getElementById('myText04').value= i
 if(b=='/'){
 document.getElementById('myText04').value= j
 }
+if(b=='^'){
+document.getElementById('myText04').value= k
+}
+if(b=='root'){
+document.getElementById('myText04').value= l
+}
+if(b=='abs'){
+document.getElementById('myText04').value= m
+}
+if(b=='sin'){
+document.getElementById('myText04').value= n
+}
+if(b=='cos'){
+document.getElementById('myText04').value= o
+}
+if(b=='ta'){
+document.getElementById('myText04').value= p
+}
 
 }">
+<div id="myDiv01"></div>
+<ol>
+<li> addition = + </li>
+<li> subtraction = -</li>
+<li> multiplication = * </li>
+<li> divide = /</li>
+<li> to the power of = ^</li>
+<li> square root of = 'root'</li>
+<li> absolute value of = 'abs'</li>
+</ol>
