@@ -1,0 +1,139 @@
+<script>
+	let myInterval
+
+function myIsOnScreen(){
+	if(parseInt(document.getElementById('myImage01').style.left) >1400){
+	document.getElementById('myImage01').style.left = '1400px'
+}
+if(parseInt(document.getElementById('myImage01').style.left) <0){
+	document.getElementById('myImage01').style.left = '0px'
+}
+if(parseInt(document.getElementById('myImage01').style.top) >550){
+	document.getElementById('myImage01').style.top = '550px'
+}
+if(parseInt(document.getElementById('myImage01').style.top) <0){
+	document.getElementById('myImage01').style.top = '0px'
+}
+if(parseInt(document.getElementById('myImage02').style.left) >1400){
+	document.getElementById('myImage02').style.left = '1400px'
+}
+if(parseInt(document.getElementById('myImage02').style.left) <0){
+	document.getElementById('myImage02').style.left = '0px'
+}
+if(parseInt(document.getElementById('myImage02').style.top) >550){
+	document.getElementById('myImage02').style.top = '550px'
+}
+if(parseInt(document.getElementById('myImage02').style.top) <0){
+	document.getElementById('myImage02').style.top = '0px'
+}
+}
+</script>
+
+<img id='myImage01' src='Rocket.gif' style="position:absolute; left:200; top:220; height 300; width:150; ">
+<h1 align=center> W=up A=left S=down D=right Q=up-left E=up-right Z=down-right C=down-left<h1>
+
+<body onkeydown="{
+	let myKey = event.key
+  //	let myKey = String.toLowerCase(event.key)
+
+	if (myKey == 'd') {
+	
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) + 20
+	myIsOnScreen()
+
+		} , 50)
+	}
+if (myKey == 'a') {
+	
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) - 20
+	myIsOnScreen()
+
+		} , 50)
+	}
+if (myKey == 'w') {
+	
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) - 20
+	myIsOnScreen()
+
+		} , 50)
+	}
+if (myKey == 's') {
+	
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) + 20
+	myIsOnScreen()
+
+		} , 50)
+	}
+if (myKey == 'q') {
+	
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) - 20
+	myIsOnScreen()
+	document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) - 20
+	myIsOnScreen()
+
+		} , 50)
+	}
+if (myKey == 'e') {
+	
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) - 20
+	myIsOnScreen()
+	document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) + 20
+	myIsOnScreen()
+		} , 50)
+	}
+if (myKey == 'z') {
+	
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) + 20
+	myIsOnScreen()
+	document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) - 20
+	myIsOnScreen()
+
+		} , 50)
+	}
+if (myKey == 'c') {
+	
+	clearInterval(myInterval)
+	myInterval = setInterval(function(){
+
+		document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) + 20
+	myIsOnScreen()
+	document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) + 20
+	myIsOnScreen()
+
+		} , 50)
+	}
+
+}">
