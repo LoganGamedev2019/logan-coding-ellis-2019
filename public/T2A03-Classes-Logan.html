@@ -1,0 +1,28 @@
+<h2 alig=center> Javascript classes t2a03-classes-Logan</h2>
+<input id="myButton130" types="button" value="make and show the class my animal"
+onclick="{
+	class myAnimal { 
+	constructor(passName, passAge) {
+	this.myName = passName;
+	this.myAge = passAge;
+}
+myShow(){
+	document.getElementById('myDiv130').innerHTML = 'hello ' + this.myName + '. You are ' + this.myAge + ' years old<br>'
+}
+}
+	myDog = new myAnimal
+	myDog.myShow()
+}"><br><br>
+<div id='myDiv130'> ... </div><br>
+
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+<input type="button" value="Use Responisve Code" onclick="{
+responsiveVoice.speak('Storm get to work')
+
+}"><br><br>
+
+
+<input type="button" value="initialize speak" onlick="{
+responsiveVoice.speak('classes make you seem like a better programmer than you are' , 'Us English Female', {pitch: 3, rate: 2, volume : 1})
+}"><br><br>
