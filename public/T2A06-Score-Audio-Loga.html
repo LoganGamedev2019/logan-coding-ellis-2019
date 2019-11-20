@@ -1,0 +1,165 @@
+<h1> wasd for banana boy, arrow keys for purple box
+<audio  controls autoplay id="myAudio">
+  <source  src="song.ogg" >
+<source  src="song.m4a" >
+</audio>
+<script>
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+</script>
+<script>
+	let myInterval
+
+function myIsOnScreen(){
+	if(parseInt(document.getElementById('myImage01').style.left) >1400){
+	document.getElementById('myImage01').style.left = '1400px'
+}
+if(parseInt(document.getElementById('myImage01').style.left) <0){
+	document.getElementById('myImage01').style.left = '0px'
+}
+if(parseInt(document.getElementById('myImage01').style.top) >550){
+	document.getElementById('myImage01').style.top = '550px'
+}
+if(parseInt(document.getElementById('myImage01').style.top) <0){
+	document.getElementById('myImage01').style.top = '0px'
+}
+if(parseInt(document.getElementById('myImage02').style.left) >1400){
+	document.getElementById('myImage02').style.left = '1400px'
+}
+if(parseInt(document.getElementById('myImage02').style.left) <0){
+	document.getElementById('myImage02').style.left = '0px'
+}
+if(parseInt(document.getElementById('myImage02').style.top) >550){
+	document.getElementById('myImage02').style.top = '550px'
+}
+if(parseInt(document.getElementById('myImage02').style.top) <0){
+	document.getElementById('myImage02').style.top = '0px'
+}
+}
+</script>
+
+
+
+
+<img id='myImage01' src='on my momma.jpg' style="position:absolute; left:200; top:220; height:200; width:200; ">
+<img id='myImage02' src='purple.png' style="position:absolute; left:400; top:220; height:200; width:200; ">
+<textarea id="myText01" rows='2' cols='30' >10 </textarea>
+
+<body onkeydown="{
+
+	let myKey = event.key
+  //	let myKey = String.toLowerCase(event.key)
+
+	
+
+	if (myKey == 'd') {
+	
+	
+		document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) + 20
+	myIsOnScreen()
+		
+		
+	}
+if (myKey == 'a') {
+	
+	
+
+		document.getElementById('myImage01').style.left = 
+	parseInt(document.getElementById('myImage01').style.left) - 20
+	myIsOnScreen()
+		
+		
+	}
+if (myKey == 'w') {
+	
+	
+
+		document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) - 20
+	myIsOnScreen()
+
+		
+	}
+if (myKey == 's') {
+	
+	
+
+		document.getElementById('myImage01').style.top = 
+	parseInt(document.getElementById('myImage01').style.top) + 20
+	myIsOnScreen()
+
+		
+	}
+
+
+	if (myKey == 'ArrowRight') {
+	
+	
+		document.getElementById('myImage02').style.left = 
+	parseInt(document.getElementById('myImage02').style.left) + 20
+	myIsOnScreen()
+
+		
+	}
+if (myKey == 'ArrowLeft') {
+	
+	
+
+		document.getElementById('myImage02').style.left = 
+	parseInt(document.getElementById('myImage02').style.left) - 20
+	myIsOnScreen()
+
+		
+	}
+if (myKey == 'ArrowUp') {
+	
+	
+
+		document.getElementById('myImage02').style.top = 
+	parseInt(document.getElementById('myImage02').style.top) - 20
+	myIsOnScreen()
+
+		
+	}
+if (myKey == 'ArrowDown') {
+	
+	
+		document.getElementById('myImage02').style.top = 
+	parseInt(document.getElementById('myImage02').style.top) + 20
+	myIsOnScreen()
+
+		
+	}
+let a=document.getElementById('myText01').value
+
+
+if(myHitOther('myImage01', 'myImage02')){
+let a=document.getElementById('myText01').value
+let b=1
+let c=a - b
+document.getElementById('myText01').value=c
+if(c==0)
+document.getElementById('myImage02').style.display='none'	
+}
+if(a == 0){
+var x = document.getElementById('myAudio');
+x.play();
+}
+
+}">
