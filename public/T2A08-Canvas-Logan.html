@@ -1,0 +1,87 @@
+<h2 alig=center> T2A08-Canvas by Logan</h2>
+<input type=button value="Line" onclick="{
+	myContext.beginPath();
+	myContext.lineWidth=1;
+	myContext.moveTo(20,10);
+	myContext.lineTo(30,200);
+	myContext.stroke();
+}">
+
+
+
+
+
+
+
+
+<input type=button value="Arc" onclick="{
+	myContext.beginPath();
+	myContext.lineWidth = 20;
+	myContext.strokeStyle = 'green';
+	myContext.arc(95 ,50, 40, 0, 2 * Math.PI); 
+	myContext.stroke();
+}">
+
+
+
+
+
+<input type=button value="Text" onclick="{
+	myContext.font = '20px Arial';
+	myContext.fillText('hello world',400, 100);
+	myContext.translate(400, 100);
+	myContext.rotate(60 * Math.PI / 180);
+	myContext.fillText('hello World' , 10, 10);
+	myContext.stroke();
+	myContext.resetTransform();
+	}">
+
+
+
+
+
+
+<input type=button value="QuadraticCurve" onclick="{
+	myContext.beginPath();
+	myContext.moveTo(300,100);
+	myContext.quadraticCurveTo(100,220,240,110);
+	myContext.stroke();
+}">
+
+
+
+
+
+<input type=button value= "Colors" onclick="{
+let myGradient = myContext.createLinearGradient(100, 300, 200, 400);
+myGradient.addColorStop(.9, 'red');
+myGradient.addColorStop(1, 'blue');
+myGradient.addColorStop(.8, 'yellow');
+
+myContext.fillStyle = myGradient;
+myContext.fillRect(100, 300, 200, 400);
+
+myContext.fillStyle = myGradient;
+myContext.fillRect(200, 400, 300, 500);
+
+myContext.fillStyle = 'black';
+}">
+
+
+
+
+
+<input type=button value="Clear Line" onclick="{
+myContext.clearRect(20, 20, 50, 50);
+}">
+
+<input type=button value= "Clear All" onclick="{
+myContext.clearRect(0, 0, myCanvas.width, myCanvas.height);
+}">
+
+<canvas id="myTag" width="1000" height="600" style"border:1px solid #000000;"></canvas>
+
+<script>
+let myCanvas=document.getElementById('myTag');
+let myContext= myCanvas.getContext('2d');
+</script>
