@@ -1,0 +1,23 @@
+<h2>T2A10-Local-Storage-Logan</h2>
+<body onload="{
+	myStorage = localStorage.getItem('myStoredText')
+	if(myStorage != null){
+		document.getElementById('myText01').value = myStorage
+}
+}">
+
+<body onunload="{
+	localstorage.setItem('mySoredText',document.getElementById('myText01').value)
+}">
+
+Text example: <input id="myText01" type=text size=70 value="" placeholder="write here to store"><br>
+
+<input type=button value="stored Text" onClick="{
+	localStorage.setItem('myStoredText', document.getElementById('myText01').value)
+alert(document.getElementById('myText01').value + ' \nHas been stored')
+document.getElementById('myText01').value = ' '
+}">
+
+<input type=button value="retrieve Text" onclick="{
+	document.getElementById('myText01').value = localStorage.getItem('myStoredText')
+}">
