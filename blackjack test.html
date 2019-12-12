@@ -1,3 +1,5 @@
+
+
 <script>
 function dealerCard(){
 let l=document.getElementById('myText05').value;
@@ -70,18 +72,18 @@ if(52>=y && y>36){
 <input type=text id="myText10" value="0">
 <input type=text id="myText01" value="0">
 <input type=text id="myText02" value="0">
-<input type=text id="myText03" value="0"><br>
-<input type=text id="myText04" value="0"><br>
+<input type=text id="myText03" value="0"><br><br>
+<input type=text id="myText04" value="0"><br><br><br><br>
 <input type=text id="myText05" value="0">
 <input type=text id="myText06" value="0">
 <input type=text id="myText11" value="0">
 <input type=text id="myText12" value="0">
-<input type=text id="myText07" value="0"><br>
+<input type=text id="myText07" value="0"><br><br>
 <input type=text id="myText08" value="0">
 
 
 
-		<input type=button value=draw id="myButton01" onclick="{
+		<input type=button value=draw id="myButton01" style="font-size: 39px;" onclick="{
 
 document.getElementById('Stand01').style.display='none'
 document.getElementById('Stand02').style.display='initial'
@@ -153,7 +155,7 @@ alert('you lose')
 
 
 }">
-<input type=button  value=draw id="myButton02" style="display: none;" onclick="{
+<input type=button  value=draw id="myButton02" style="display: none;font-size: 39px;" onclick="{
 
 document.getElementById('myButton02').style.display='none'
 document.getElementById('Stand02').style.display='none'
@@ -223,7 +225,7 @@ alert('you lose')
 	}
 
 }">
-<input type=button  value=draw id="myButton03" style="display: none;" onclick="{
+<input type=button  value=draw id="myButton03" style="display: none;font-size: 39px;" onclick="{
 
 document.getElementById('myButton03').style.display='none'
 
@@ -292,7 +294,7 @@ alert('you lose')
 	}
 
 }">
-<input type=button value=stand id="Stand01" onclick="{
+<input type=button value=stand id="Stand01" style="font-size: 39px;" onclick="{
 
 document.getElementById('myButton01').style.display='none'
 
@@ -322,7 +324,7 @@ alert('you lose')
 
 }">
 
-<input type=button value=stand id="Stand02" style="display: none;" onclick="{
+<input type=button value=stand id="Stand02" style="display: none;font-size: 39px;" onclick="{
 
 document.getElementById('myButton02').style.display='none'
 
@@ -351,6 +353,12 @@ alert('you lose')
 	}
 
 
+
+
+
+
+
+//dealer cards
 }">
 <body onload="newCardDealer()">
 <script>
@@ -570,4 +578,7 @@ alert('you lose')
 
 </script>
 </body>
-
+<br><br><br><br><br><br>
+<input type=button id=Reset value="Reset" onclick="{
+window.location.href=window.location.href
+}">
