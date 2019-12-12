@@ -1,79 +1,134 @@
+<script>
+function dealerCard(){
+let l=document.getElementById('myText05').value;
+let m=document.getElementById('myText06').value;
+let n=document.getElementById('myText07').value;
+let o=document.getElementById('myText11').value;
+let p=document.getElementById('myText12').value;
+let q=parseInt(l);
+let r=parseInt(m);
+let s=parseInt(n);
+let t=parseInt(o);
+let u=parseInt(p);
+
+
+let v= q + r + s + t + u;
+
+	document.getElementById('myText08').value= v
+if(v>21){
+alert('you win')
+	}
+
+
+	document.getElementById('myText11').value=Math.floor(Math.random()*53)
+
+		y=document.getElementById('myText11').value
+
+if(y<=4){
+	document.getElementById('myText11').value=1
+}
+
+if(8>=y && y>4){
+	document.getElementById('myText11').value=2
+}
+
+if(12>=y && y>8){
+	document.getElementById('myText11').value=3
+}
+
+if(16>=y && y>12){
+	document.getElementById('myText11').value=4
+}
+
+if(20>=y && y>16){
+	document.getElementById('myText11').value=5
+}
+
+if(24>=y && y>20){
+	document.getElementById('myText11').value=6
+}
+
+if(28>=y && y>24){
+	document.getElementById('myText11').value=7
+}
+
+if(32>=y && y>28){
+	document.getElementById('myText11').value=8
+}
+
+if(36>=y && y>32){
+	document.getElementById('myText11').value=9
+}
+
+if(52>=y && y>36){
+	document.getElementById('myText11').value=10
+}
+}
+</script>
 
 <input type=text id="myText09" value="0">
-
 <input type=text id="myText10" value="0">
-
 <input type=text id="myText01" value="0">
-
 <input type=text id="myText02" value="0">
-
 <input type=text id="myText03" value="0"><br>
-
 <input type=text id="myText04" value="0"><br>
-
 <input type=text id="myText05" value="0">
-
 <input type=text id="myText06" value="0">
-
+<input type=text id="myText11" value="0">
+<input type=text id="myText12" value="0">
 <input type=text id="myText07" value="0"><br>
-
 <input type=text id="myText08" value="0">
 
-<input type=text id="myText11" value="0">
 
-<input type=text id="myText12" value="0">
 
-<input type=button value=draw id="myButton01" onclick="{
+		<input type=button value=draw id="myButton01" onclick="{
 
 document.getElementById('Stand01').style.display='none'
-
 document.getElementById('Stand02').style.display='initial'
-
 document.getElementById('myButton01').style.display='none'
-
 document.getElementById('myButton02').style.display='initial'
 
 document.getElementById('myText01').value=Math.floor(Math.random()*53)
 
-x=document.getElementById('myText01').value
+		x=document.getElementById('myText01').value
 if(x<=4){
-document.getElementById('myText01').value=1
+	document.getElementById('myText01').value=1
 }
 
 if(8>=x && x>4){
-document.getElementById('myText01').value=2
+	document.getElementById('myText01').value=2
 }
 
 if(12>=x && x>8){
-document.getElementById('myText01').value=3
+	document.getElementById('myText01').value=3
 }
 
 if(16>=x && x>12){
-document.getElementById('myText01').value=4
+	document.getElementById('myText01').value=4
 }
 
 if(20>=x && x>16){
-document.getElementById('myText01').value=5
+	document.getElementById('myText01').value=5
 }
 
 if(24>=x && x>20){
-document.getElementById('myText01').value=6
+	document.getElementById('myText01').value=6
 }
 
 if(28>=x && x>24){
-document.getElementById('myText01').value=7
+	document.getElementById('myText01').value=7
 }
 
 if(32>=x && x>28){
-document.getElementById('myText01').value=8
+	document.getElementById('myText01').value=8
 }
 
 if(36>=x && x>32){
-document.getElementById('myText01').value=9
+	document.getElementById('myText01').value=9
 }
 
 if(52>=x && x>36){
-document.getElementById('myText01').value=10
+	document.getElementById('myText01').value=10
 }
 
 
@@ -88,67 +143,63 @@ let h=parseInt(c);
 let i=parseInt(d);
 let j=parseInt(e);
 
-
 let k= f + g + h + i + j;
 
 document.getElementById('myText04').value= k
+
 if(k>21){
 alert('you lose')
 	}
+
 
 }">
 <input type=button  value=draw id="myButton02" style="display: none;" onclick="{
 
 document.getElementById('myButton02').style.display='none'
-
-
 document.getElementById('Stand02').style.display='none'
-
 document.getElementById('myButton03').style.display='initial'
-
-
 
 document.getElementById('myText02').value=Math.floor(Math.random()*53)
 
-x=document.getElementById('myText02').value
+		x=document.getElementById('myText02').value
 if(x<=4){
-document.getElementById('myText02').value=1
+	document.getElementById('myText02').value=1
 }
 
 if(8>=x && x>4){
-document.getElementById('myText02').value=2
+	document.getElementById('myText02').value=2
 }
 
 if(12>=x && x>8){
-document.getElementById('myText02').value=3
+	document.getElementById('myText02').value=3
 }
 
 if(16>=x && x>12){
-document.getElementById('myText02').value=4
+	document.getElementById('myText02').value=4
 }
 
 if(20>=x && x>16){
-document.getElementById('myText02').value=5
+	document.getElementById('myText02').value=5
 }
 
 if(24>=x && x>20){
-document.getElementById('myText02').value=6
+	document.getElementById('myText02').value=6
 }
 
 if(28>=x && x>24){
-document.getElementById('myText02').value=7
+	document.getElementById('myText02').value=7
 }
 
 if(32>=x && x>28){
-document.getElementById('myText02').value=8
+	document.getElementById('myText02').value=8
 }
 
 if(36>=x && x>32){
-document.getElementById('myText02').value=9
+	document.getElementById('myText02').value=9
 }
 
 if(52>=x && x>36){
-document.getElementById('myText02').value=10
+	document.getElementById('myText02').value=10
 }
 
 
@@ -170,6 +221,7 @@ document.getElementById('myText04').value= k
 if(k>21){
 alert('you lose')
 	}
+
 }">
 <input type=button  value=draw id="myButton03" style="display: none;" onclick="{
 
@@ -509,7 +561,7 @@ let j=parseInt(e);
 
 let k= f + g + h + i + j;
 
-document.getElementById('myText08').value= k
+document.getElementById('myText04').value= k
 if(k>21){
 alert('you lose')
 	}
