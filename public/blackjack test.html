@@ -57,6 +57,16 @@ if(36>=y && y>32){
 if(52>=y && y>36){
 	document.getElementById('myText11').value=10
 }
+let z=document.getElementById('myText01').value;
+let y=parseInt(z);
+if(z==1 && k<=10){
+let k=document.getElementById('myText04').value;
+let j=parseInt(k);
+let w= j + 10
+document.getElementById('myText04').value= w
+}
+
+
 }
 </script>
 
@@ -112,6 +122,12 @@ if(36>=x && x>32){
 if(52>=x && x>36){
 	document.getElementById('myText01').value=10
 }
+
+
+
+
+
+
 let a=document.getElementById('myText09').value;
 let b=document.getElementById('myText10').value;
 let c=document.getElementById('myText01').value;
@@ -142,6 +158,17 @@ document.getElementById('myText08').value= v
 if(v<17){
 document.getElementById('newDealerCard').click();
 	}
+let z=document.getElementById('myText01').value;
+let y=parseInt(z);
+if(z==1 && k<=10){
+let k=document.getElementById('myText04').value;
+let j=parseInt(k);
+let w= j + 10
+document.getElementById('myText04').value= w
+}
+
+
+
 
 }">
 <input type=button  value=draw id="myButton02" style="display: none;font-size: 39px;" onclick="{
@@ -180,6 +207,10 @@ if(36>=x && x>32){
 if(52>=x && x>36){
 	document.getElementById('myText02').value=10
 }
+
+
+
+
 let a=document.getElementById('myText09').value;
 let b=document.getElementById('myText10').value;
 let c=document.getElementById('myText01').value;
@@ -246,6 +277,10 @@ document.getElementById('myText03').value=9
 if(52>=x && x>36){
 document.getElementById('myText03').value=10
 }
+
+
+
+
 let a=document.getElementById('myText09').value;
 let b=document.getElementById('myText10').value;
 let c=document.getElementById('myText01').value;
@@ -281,7 +316,7 @@ document.getElementById('newDealerCard02').click()
 <input type=button value=stand id="Stand01" style="font-size: 39px;" onclick="{
 document.getElementById('myButton01').style.display='none'
 document.getElementById('Stand01').style.display='none'
-document.getElementById('myButton02').style.display='initial'
+document.getElementById('myButton02').style.display='none'
 let a=document.getElementById('myText09').value;
 let b=document.getElementById('myText10').value;
 let c=document.getElementById('myText01').value;
@@ -312,13 +347,22 @@ document.getElementById('myText08').value= v
 if(v<17){
 document.getElementById('newDealerCard').click();
 	}
+if(v>k){
+alert('You Lose')
+}
+if(v<k){
+alert('You Win')
+}
+if(v==k){
+alert('Push')
+}
 
 }">
 
 <input type=button value=stand id="Stand02" style="display: none;font-size: 39px;" onclick="{
 document.getElementById('myButton02').style.display='none'
 document.getElementById('Stand02').style.display='none'
-document.getElementById('myButton03').style.display='initial'
+document.getElementById('myButton03').style.display='none'
 let a=document.getElementById('myText09').value;
 let b=document.getElementById('myText10').value;
 let c=document.getElementById('myText01').value;
@@ -349,6 +393,16 @@ document.getElementById('myText08').value= v
 if(v<17){
 document.getElementById('newDealerCard01').click();
 	}
+if(v>k){
+alert('You Lose')
+}
+if(v<k){
+alert('You Win')
+}
+if(v==k){
+alert('Push')
+}
+
 
 //dealer cards
 }">
@@ -387,6 +441,9 @@ document.getElementById('myText05').value=9
 if(52>=x && x>36){
 document.getElementById('myText05').value=10
 }
+
+
+
 document.getElementById('myText06').value=Math.floor(Math.random()*53)
 x=document.getElementById('myText06').value
 if(x<=4){
@@ -419,6 +476,9 @@ document.getElementById('myText06').value=9
 if(52>=x && x>36){
 document.getElementById('myText06').value=10
 }
+
+
+
 let l=document.getElementById('myText05').value;
 let m=document.getElementById('myText06').value;
 let n=document.getElementById('myText07').value;
@@ -467,6 +527,9 @@ document.getElementById('myText09').value=9
 if(52>=x && x>36){
 document.getElementById('myText09').value=10
 }
+
+
+
 document.getElementById('myText10').value=Math.floor(Math.random()*53)
 x=document.getElementById('myText10').value
 if(x<=4){
@@ -499,6 +562,10 @@ document.getElementById('myText10').value=9
 if(52>=x && x>36){
 document.getElementById('myText10').value=10
 }
+
+
+
+
 let a=document.getElementById('myText09').value;
 let b=document.getElementById('myText10').value;
 let c=document.getElementById('myText01').value;
@@ -519,7 +586,7 @@ alert('you lose')
 <br><br><br><br><br><br>
 
 
-//have other buttons click this button if dealer total is under 21
+//have other buttons click this button if dealer total is under 17
 <input type=button id="newDealerCard" style="display:none;" onclick="{
 document.getElementById('myText11').value=Math.floor(Math.random()*53)
 x=document.getElementById('myText11').value
@@ -553,6 +620,15 @@ document.getElementById('myText11').value=9
 if(52>=x && x>36){
 document.getElementById('myText11').value=10
 }
+
+
+if(z==1 && k<=10){
+let k=document.getElementById('myText04').value;
+let j=parseInt(k);
+let w= j + 10;
+document.getElementById('myText04').value= w;
+}
+
 let l=document.getElementById('myText05').value;
 let m=document.getElementById('myText06').value;
 let n=document.getElementById('myText07').value;
@@ -602,6 +678,15 @@ document.getElementById('myText12').value=9
 if(52>=x && x>36){
 document.getElementById('myText12').value=10
 }
+
+
+if(z==1 && k<=10){
+let k=document.getElementById('myText04').value;
+let j=parseInt(k);
+let w= j + 10;
+document.getElementById('myText04').value= w;
+}
+
 let l=document.getElementById('myText05').value;
 let m=document.getElementById('myText06').value;
 let n=document.getElementById('myText07').value;
@@ -650,6 +735,9 @@ document.getElementById('myText07').value=9
 if(52>=x && x>36){
 document.getElementById('myText07').value=10
 }
+
+
+
 let l=document.getElementById('myText05').value;
 let m=document.getElementById('myText06').value;
 let n=document.getElementById('myText07').value;
