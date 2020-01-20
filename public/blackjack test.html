@@ -1,9 +1,6 @@
-use another page for betting
-
-//soft hand
-if('x+10'<21){
-x + 10
-}
+<input type=button id=Home value="Home" style="font-size: 39px;" onclick="{
+window.location.href='Final Game.html';
+}"><br><br>
 
 
 
@@ -63,18 +60,18 @@ if(52>=y && y>36){
 }
 </script>
 
-<input type=text id="myText09" value="0">
-<input type=text id="myText10" value="0">
-<input type=text id="myText01" value="0">
-<input type=text id="myText02" value="0">
-<input type=text id="myText03" value="0"><br><br>
-<input type=text id="myText04" value="0"><br><br><br><br>
-<input type=text id="myText05" value="0">
-<input type=text id="myText06" value="0">
-<input type=text id="myText11" value="0">
-<input type=text id="myText12" value="0">
-<input type=text id="myText07" value="0"><br><br>
-<input type=text id="myText08" value="0">
+<input readonly type=text id="myText09" value="0">
+<input readonly type=text id="myText10" value="0">
+<input readonly type=text id="myText01" value="0">
+<input readonly type=text id="myText02" value="0">
+<input readonly type=text id="myText03" value="0"><br><br>
+<input readonly type=text id="myText04" value="0"><br><br><br><br>
+<input readonly type=text id="myText05" value="0">
+<input readonly type=text id="myText06" value="0">
+<input readonly type=text id="myText11" value="0">
+<input readonly type=text id="myText12" value="0">
+<input readonly type=text id="myText07" value="0"><br><br>
+<input readonly type=text id="myText08" value="0">
 
 
 
@@ -640,7 +637,7 @@ document.getElementById('myText08').value= w
 <br><br><br><br><br><br>
 
 
-//have other buttons click this button if dealer total is under 17
+
 <input type=button id="newDealerCard" style="display:none;" onclick="{
 document.getElementById('myText11').value=Math.floor(Math.random()*53)
 x=document.getElementById('myText11').value
