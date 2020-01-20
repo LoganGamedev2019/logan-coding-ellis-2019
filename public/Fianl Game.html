@@ -1,0 +1,55 @@
+<input type=text id="myText01" value="0">
+<input type=text id="myText02" value="0">
+<input type=button id=reset value="reset bet" onclick="{
+document.getElementById('myText01').value=0
+}">
+<input type=button id="bet" value ="place bet" onclick="{
+x=document.getElementById('myText01').value;
+y=document.getElementById('myText02').value;
+a=parseInt(x);
+b=parseInt(y);
+c=a+b;
+document.getElementById('myText02').value=c;
+}">
+<input type=button id=25 value="25" onclick="{
+x=document.getElementById('myText01').value;
+y= parseInt(x);
+document.getElementById('myText01').value= y+25;
+}">
+<input type=button id=50 value="50" onclick="{
+x=document.getElementById('myText01').value;
+y= parseInt(x);
+document.getElementById('myText01').value= y+50;
+}">
+<input type=button id=75 value="75" onclick="{
+x=document.getElementById('myText01').value;
+y= parseInt(x);
+document.getElementById('myText01').value= y+75;
+}">
+<input type=button id=100 value="100" onclick="{
+x=document.getElementById('myText01').value;
+y= parseInt(x);
+document.getElementById('myText01').value= y+100;
+}">
+<input type=button id=250 value="250" onclick="{
+x=document.getElementById('myText01').value;
+y= parseInt(x);
+document.getElementById('myText01').value= y+250;
+}">
+<input type=button id=1000 value="1000" onclick="{
+x=document.getElementById('myText01').value;
+y= parseInt(x);
+document.getElementById('myText01').value= y+1000;
+}">
+<br><br>
+<input type=button id=Reset value="Start BlackJack" style="font-size: 39px;" onclick="{
+window.location.href='blackjack test.html';
+}">
+<br><br>
+<input type=button id=Reset value="Start CoinFLip" style="font-size: 39px;" onclick="{
+window.location.href='coinFlip.html';
+}">
+<br><br>
+<input type=button id=Reset value="Start Higher Or Lower" style="font-size: 39px;" onclick="{
+window.location.href='higherOrLower.html';
+}">

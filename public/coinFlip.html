@@ -1,0 +1,51 @@
+<h1>Type 0 or 1 into the top text box then press flip
+
+<img src="you win.png" width=0 id="myImage02"><br>
+<img src="L.png" width=0 id="myImage01"><br>
+<img src="coin-flip-tails.gif" width=300 style="display: none;" id="tails"><br>
+<img src="coin-flip-heads.gif" width=300 style="display: none;" id="heads"><br>
+<input type=text id="myText01" style="display: none;" value="0"><br>
+<input type=text id="myText02" style="display: none;" value="0"><br>
+
+<input type=button id=heads value="heads" style="font-size: 39px;" onclick="{
+document.getElementById('myText01').value=0
+}">
+<input type=button id=heads value="tails" style="font-size: 39px;" onclick="{
+document.getElementById('myText01').value=1
+}">
+<input type=button value="Flip" onclick="{
+document.getElementById('myImage02').style.position='absolute'
+document.getElementById('myImage02').style.left='0'
+document.getElementById('myImage02').style.top='0'
+document.getElementById('myImage02').style.width='0'
+
+document.getElementById('myImage01').style.position='absolute'
+document.getElementById('myImage01').style.left='0'
+document.getElementById('myImage01').style.top='0'
+document.getElementById('myImage01').style.width='0'
+
+document.getElementById('myText02').value=Math.floor(Math.random()*2)
+ 
+x= document.getElementById('myText01').value 
+y=  document.getElementById('myText02').value 
+
+if(y==0){
+document.getElementById('heads').style='display: initial;'
+}
+if(y==1){
+document.getElementById('tails').style='display: initial;'
+}
+
+if (x==y){ 
+document.getElementById('myImage02').style.position='absolute'
+document.getElementById('myImage02').style.left='800'
+document.getElementById('myImage02').style.top='200'
+document.getElementById('myImage02').style.width='300'
+}else{
+document.getElementById('myImage01').style.position='absolute'
+document.getElementById('myImage01').style.left='1000'
+document.getElementById('myImage01').style.top='200'
+document.getElementById('myImage01').style.width='300'
+document.getElementById('myImage01').style.height='300'
+}
+}">
